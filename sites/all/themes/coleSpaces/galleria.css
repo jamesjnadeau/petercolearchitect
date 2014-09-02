@@ -1,0 +1,59 @@
+.galleria{list-style:none;width:640px}
+.galleria_wrapper {height: 337px;}
+galleria_container {width: 640px; height: 337px; background-color: #cccfd7;}
+.galleria li{display:block;width:80px;height:80px;overflow:hidden;float:left;margin:2px 10px 10px 2px}
+.galleria li a{display:none; }
+.galleria li.hover {border: 2px solid #c8c1b0; margin:0px 8px 8px 0px;}
+.galleria li.hover, .galleria li.hover img.thumb{ opacity: 1; filter: alpha(opacity = 100); }
+.galleria li.active {border: 2px solid #c8c1b0; margin:0px 8px 8px 0px;}
+.galleria li.active, .galleria li.active img.thumb{opacity: 1; filter: alpha(opacity = 100);}
+.galleria li div{position:absolute;display:none;top:0;left:180px}
+.galleria li div img{cursor:pointer}
+.galleria li.active div img,.galleria li.active div{display:block}
+.galleria li img.thumb{cursor:pointer;top:auto;left:auto;display:block;width:auto;height:auto; opacity: 0.5; filter: alpha(opacity = 50);}
+
+
+.galleria li .caption{display:block;padding-top:.5em}
+* html .galleria li div span{width:400px} /* MSIE bug */
+#node-355 .last{ background-image: url(../../files/images/global/img_previous.gif); background-repeat: no-repeat; border: none; margin:15px 8px 8px 0px; width: 100px; height: 50px; clear: left; display:block; }
+
+#node-344 .last { background-image: url(../../files/images/global/img_previous.gif); background-repeat: no-repeat; border: none; margin:15px 8px 8px 0px; width: 100px; height: 50px; clear: left; display:block; }
+
+#node-348 .last { background-image: url(../../files/images/global/img_previous.gif); background-repeat: no-repeat; border: none; margin:15px 8px 8px 0px; width: 100px; height: 50px; clear: left; display:block; }
+
+#node-354 .last { background-image: url(../../files/images/global/img_previous.gif); background-repeat: no-repeat; border: none; margin:15px 8px 8px 0px; width: 100px; height: 50px; clear: left; display:block; }
+
+#node-356 .last{ background-image: url(../../files/images/global/img_previous.gif); background-repeat: no-repeat; border: none; margin:15px 8px 8px 0px; width: 100px; height: 50px; clear: left; display:block; }
+
+#node-389 .last { background-image: url(../../files/images/global/img_previous.gif); background-repeat: no-repeat; border: none; margin:15px 8px 8px 0px; width: 100px; height: 50px; clear: left; display:block; }
+
+#node-351 .last { background-image: url(../../files/images/global/img_previous.gif); background-repeat: no-repeat; border: none; margin:15px 8px 8px 0px; width: 100px; height: 50px; clear: left; display:block; }
+
+
+#node-355 .last img { opacity: 0; filter: alpha(opacity = 0); display: block;}
+
+#node-344 .last img { opacity: 0; filter: alpha(opacity = 0); display: block;}
+
+#node-348 .last img { opacity: 0; filter: alpha(opacity = 0); display: block;}
+
+#node-354 .last img { opacity: 0; filter: alpha(opacity = 0); display: block;}
+
+#node-356 .last img { opacity: 0; filter: alpha(opacity = 0); display: block;}
+
+#node-389 .last img{ opacity: 0; filter: alpha(opacity = 0); display: block;}
+
+#node-351 .last img { opacity: 0; filter: alpha(opacity = 0); display: block;}
+
+#node-355 .galleria li.hover, #node-355 .galleria li.active{ background-image: url(../../files/images/global/img_previousO.gif); background-repeat: no-repeat;}
+
+#node-344 .galleria li.hover, #node-344 .galleria li.active { background-image: url(../../files/images/global/img_previousO.gif); background-repeat: no-repeat;}
+
+#node-348 .galleria li.hover, #node-348 .galleria li.active { background-image: url(../../files/images/global/img_previousO.gif); background-repeat: no-repeat;}
+
+#node-354 .galleria li.hover, #node-354 .galleria li.active { background-image: url(../../files/images/global/img_previousO.gif); background-repeat: no-repeat;}
+
+#node-356 .galleria li.hover, #node-356 .galleria li.active { background-image: url(../../files/images/global/img_previousO.gif); background-repeat: no-repeat;}
+
+#node-389 .galleria li.hover, #node-389 .galleria li.active { background-image: url(../../files/images/global/img_previousO.gif); background-repeat: no-repeat;}
+
+#node-351 .galleria li.hover, #node-351 .galleria li.active { background-image: url(../../files/images/global/img_previousO.gif); background-repeat: no-repeat;}

@@ -1,0 +1,1887 @@
+/*
+ *$Id: zen.css,v 1.7 2008/04/20 04:20:27 johnalbin Exp $ */
+
+/*
+ * ZEN STYLES
+ *
+ * This is an example stylesheet. Sub-themes should NOT include the zen/zen.css
+ * file, but instead copy this CSS to their own stylesheets.
+ *
+ * In this stylesheet, we have included all of the classes and IDs from this
+ * theme's tpl.php files. We have also included many of the useful Drupal core
+ * styles to make it easier for theme developers to see them.
+ *
+ * Many of these styles are over-riding Drupal's core stylesheets, so if you
+ * remove a declaration from here, the styles may still not be what you want
+ * since Drupal's core stylesheets are still styling the element. See the
+ * drupal5-reference.css file for a list of all Drupal 5.x core styles.
+ *
+ * In addition to the style declarations in this file, other Drupal styles that
+ * you might want to override or augment are those for:
+ *
+ *   Book Navigation  See line 74  of Zen's drupal5-reference.css file
+ *   Forum            See line 197 of Zen's drupal5-reference.css file
+ *   Menus            See line 667 of Zen's drupal5-reference.css file
+ *   News Aggregator  See line 20  of Zen's drupal5-reference.css file
+ *   Polls            See line 287 of Zen's drupal5-reference.css file
+ *   Search           See line 320 of Zen's drupal5-reference.css file
+ *   User Profiles    See line 945 of Zen's drupal5-reference.css file
+ */
+
+
+/* global styles
+----------------------------------------------- */
+
+/** body **/
+body{
+	font:normal 15px Georgia, serif;
+	color:#484848;
+	line-height:20px;
+	letter-spacing:.5px;
+	text-align:left;
+	text-decoration:none;
+	text-transform:none;
+	
+	}
+body #main #content #content-header h1{
+	display:none;	
+	
+	}
+li {
+list-style: none;
+list-style-image: none;
+}
+ul li {
+list-style: none;
+list-style-image: none;
+}
+
+	
+/** primary horizontal navigation (different from index) **/
+#navbar{
+	width:946px;
+	height:38px;
+	/*margin-top:-380px;
+	margin-left:-12px;
+	float:left;
+	display:block;*/
+	background-color:#6c6f79;
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	}
+#navbar-inner{
+	margin:0;
+	padding:0;
+	background-color:transparent;
+	
+	}
+#navbar #primary ul.links{
+	margin:0;
+	padding:0;
+	background-color:transparent;
+
+	}	
+#navbar #primary ul.links li{
+	width:100%;
+	height:38px;
+	margin:0;
+	padding:0;
+	display:block;
+	float:left;
+    list-style:none;
+	background-color:transparent;
+
+	}
+#navbar #primary ul.links li a{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:38px;
+	text-indent:-123420px;
+	float:left;
+	display:block;
+
+	}
+#navbar #primary ul.links li.menu-146{
+	margin:0;
+	padding:0;
+	width:129px;
+	height:38px;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_home1.png);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	}
+#navbar #primary ul.links li.menu-146 a:hover{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_home1.png);
+    background-position:0 -38px;
+    background-repeat:no-repeat;
+	}
+#navbar #primary ul.links li.menu-146 a:active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_home1.png);
+    background-position:0 -38px;
+    background-repeat:no-repeat;
+	}
+
+#navbar #primary ul.links li.menu-147{
+	margin:0;
+	padding:0;
+	width:138px;
+	height:38px;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_styles1.png);
+    background-position:0 0;
+    background-repeat:no-repeat;
+
+	}
+#navbar #primary ul.links li.menu-147 a:hover{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_styles1.png);
+    background-position:0 -38px;
+    background-repeat:no-repeat;
+	}
+#navbar #primary ul.links li.menu-147 a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_styles1.png);
+    background-position:0 -38px;
+    background-repeat:no-repeat;
+	}
+#navbar #primary ul.links li.menu-148{
+	margin:0;
+	padding:0;
+	width:148px;
+	height:38px;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_spaces1.png);
+    background-position:0 -38px;
+    background-repeat:no-repeat;
+
+	}
+#navbar #primary ul.links li.menu-148 a:hover{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_spaces1.png);
+    background-position:0 -38px;
+    background-repeat:no-repeat;
+	}
+#navbar #primary ul.links li.menu-148 a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_spaces1.png);
+    background-position:0 -38px;
+    background-repeat:no-repeat;
+	}
+#navbar #primary ul.links li.menu-149{
+	margin:0;
+	padding:0;
+	width:177px;
+	height:38px;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_about1.png);
+    background-position:0 0;
+    background-repeat:no-repeat;
+
+	}
+#navbar #primary ul.links li.menu-149 a:hover{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_about1.png);
+    background-position:0 -38px;
+    background-repeat:no-repeat;
+	}
+#navbar #primary ul.links li.menu-149 a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_about1.png);
+    background-position:0 -38px;
+    background-repeat:no-repeat;
+	}
+#navbar #primary ul.links li.menu-150 {
+	margin:0;
+	padding:0;
+	width:161px;
+	height:38px;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_contact1.png);
+    background-position:0 0;
+    background-repeat:no-repeat;
+
+	}
+#navbar #primary ul.links li.menu-150 a:hover{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_contact1.png);
+    background-position:0 -38px;
+    background-repeat:no-repeat;
+	}
+#navbar #primary ul.links li.menu-150 a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_contact1.png);
+    background-position:0 -38px;
+    background-repeat:no-repeat;
+	}
+#navbar #primary ul.links li a:hover,
+#navbar #primary ul.links li a.active{
+	}
+
+/** content **/
+body.not-front #main{
+	padding:0;
+	background-color:transparent;
+	
+	}
+body.not-front #main-inner{
+	margin:0;
+	padding:0;
+	background-color:transparent;
+	
+	}
+body.not-front #main-inner #sidebar-left{
+    width:298px;
+    /*margin-top:-769px;
+    float:left;*/
+    padding:0;
+    display:block;
+    background-color:transparent;
+	background-color: #91939a;
+    margin-bottom: 30px;
+	min-height: 337px;
+	position: absolute;
+	top: 33px;
+	left: -2px;
+	    }
+body.not-front #main-inner #content{
+	/*width:638px;
+	margin-left:308px;
+	padding:0;
+	float:left;
+	display:block;
+	background-color:transparent;*/
+	
+	}
+body.not-front #content-area .node-type-page .content {
+	width:638px;
+	/*height:750px;
+	margin-top:0px;
+	margin-left:0px;
+	padding:0;
+	float:left;
+	display:block; 
+	background-color:transparent; */
+	border:none;
+	}
+body.not-front #content-area .node-type-page .content #styles_image {
+	width:638px;
+	padding:0;
+	/*
+	float:left;
+		margin-top: 6px;
+
+	display:block;
+	overflow:hidden;
+	height:347px;*/
+	background-position:0 0;
+	
+	}
+body.not-front #content-area .node-type-page .content #galleria-content{
+	width:638px;
+	padding:0;
+	/*
+	float:left;
+		margin-top: 6px;
+
+	display:block;
+	overflow:hidden;
+	height:347px;*/
+	background-position:0 0;
+	
+	}
+	
+	
+body.not-front #content-area .node-type-page .content #styles_image img{
+	display:block; /* set this to "block", used to be "none" */
+
+	
+	}
+body.not-front #content-area .node-type-page .content #galleria-content img{
+	display:block; /* set this to "block", used to be "none" */
+
+	
+	}	
+	
+body.not-front #content-area .node-type-page .content #styles_text{
+	width:566px; 
+	margin-top: 31px;
+	padding-top: 6px;
+	float:left;
+	
+	
+	}
+.node-inner .content h1{
+	width:400px;
+	margin:0;
+	padding-bottom:5px;
+	font:normal 21px Georgia, serif;
+	color:#58534a;
+	line-height:20px;
+	letter-spacing:.5px;
+	text-align:left;
+	text-decoration:none;
+	text-transform:none;
+
+	}
+.node-inner .content h2{
+	width:400px;
+	margin:0;
+	padding:0;
+	font:normal 14px Arial, sans-serif;
+	color:#58534a;
+	line-height:20px;
+	letter-spacing:.5px;
+	text-align:left;
+	text-decoration:none;
+	text-transform:none;
+
+	}
+.node-inner .content p{
+	width:566px;
+	margin:0;
+	padding: 15px 52px 15px 10px;
+	border-top: 3px #DFDCD5 solid;
+	border-bottom:	3px #DFDCD5 solid;
+	font:normal 12px Georgia, serif;
+	color:#484848;
+	line-height:20px;
+	letter-spacing:.5px;
+	text-align:left;
+	text-decoration:none;
+	text-transform:none;
+	margin-left: 8px;
+
+	}
+
+/** footer **/
+#footer a{
+	font:normal 10px Verdana, Arial, sans-serif;
+	color:#858177;
+	line-height:13px;
+	letter-spacing:.5px;
+	text-align:center;	
+	text-decoration:none;
+	text-transform:none;
+
+	}
+#footer a:hover{
+	border-bottom-color:#484848;
+	border-bottom-style:dotted;
+	border-bottom-width:1px;
+	font:normal 10px Verdana, Arial, sans-serif;
+	color:#484848;
+	line-height:13px;
+	letter-spacing:.5px;
+	text-align:center;	
+	text-decoration:none;
+	text-transform:none;
+
+	}
+	
+/** menu **/  
+body.not-front #sidebar-left .block-inner{
+	width:298px;
+	margin:0;
+	padding:0;
+	/*background-color:#50535a;*/
+	display:block;
+	
+	}
+#block-menu-menu-styles {
+	text-indent: -123420px;
+    background-image:url(../../files/images/global/nav_stylesHdr.gif);
+    background-position:0 0px;
+    background-repeat:no-repeat;
+	width: 298px;
+	}
+#block-menu-menu-spaces {
+	text-indent: -123420px;
+    background-image:url(../../files/images/global/nav_spacesHdr.gif);
+    background-position:0 0px;
+    background-repeat:no-repeat;
+	width: 298px;
+	}
+body.not-front #sidebar-left .block-inner h2{
+	margin:0;
+	padding: 30px 0 0 25px;
+	/*background-color:#50535a; */
+	font:2.055em normal "Georgia" Georgia, serif;
+	color:#d3d4d6;
+	text-decoration:none;
+	text-transform:none;
+	display:block;
+	}
+body.not-front #sidebar-left .block-inner .content{
+	margin:0;
+	/*padding-top:30px;
+	padding-left:42px;
+	padding-bottom:30px;*/
+	background-color:#90939a;
+	display:block;
+
+	}
+body.not-front #sidebar-left .block-inner .content ul.menu{
+	margin:0;
+	padding:0;
+	display:block;
+	list-style:none;
+	list-style-image: none;
+	/*text-indent: 0px;*/
+	
+	}
+body.not-front #sidebar-left .block-inner .content ul.menu li{
+	/*width:266px;*/
+	margin:0;
+	/*margin-bottom:8px;
+	padding-bottom:1px;*/
+	display:block;
+	list-style:none;
+	list-style-image: none;
+	font:1.256em normal "Georgia" Georgia, serif;
+	color:#e8e8e8;
+	text-decoration:none;
+	text-transform:none;
+	/*border-bottom:1px solid #44474e;*/
+
+	}
+body.not-front #sidebar-left .block-inner .content ul.menu li a{
+	width: 298px;
+	margin:0;
+	/*margin-bottom:5px;
+	padding-bottom:1px;*/
+	display:block;
+	color:#e8e8e8;
+	text-decoration:none;
+	text-transform:none;
+	height: 34px;
+	list-style:none;
+	list-style-image: none;
+
+	}
+body.not-front #sidebar-left .block-inner .content ul.menu li a:hover{
+	/*color:red;*/
+	text-decoration:none;
+	text-transform:none;
+	list-style:none;
+	list-style-image: none;
+	
+	}
+
+/** child menu **/
+body.not-front #sidebar-left .block-inner .content ul ul.menu{
+	margin:0px;
+	/*padding-left:20px;*/
+	display:block;
+list-style:none;
+	list-style-image: none;	
+	}
+body.not-front #sidebar-left .block-inner .content ul ul.menu li{
+	margin:0;
+	/*margin-bottom:8px;
+	padding-bottom:1px;
+	font: .899em normal "Georgia" Georgia, serif;
+*/
+	display:block;
+	list-style:none;
+	list-style-image: none;
+	color:#e8e8e8;
+	text-decoration:none;
+	text-transform:none;
+	border-bottom:none;
+
+	}
+body.not-front #sidebar-left .block-inner .content ul ul.menu li a{
+	margin:0;
+	/*padding-bottom:1px;*/
+	display:block;
+	color:#e8e8e8;
+	text-decoration:none;
+	text-transform:none;
+	list-style:none;
+	list-style-image: none;
+
+	}
+body.not-front #sidebar-left .block-inner .content ul ul.menu li a:hover{
+	/*color:red;*/
+	text-decoration:none;
+	text-transform:none;
+	list-style:none;
+	list-style-image: none;
+	
+	}
+
+
+/* secondary nav
+----------------------------------------------- */
+
+#Colonial {
+	margin:0;
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_colonial.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+#Colonial a:hover, #Colonial a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_colonial.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+#Modern {
+	margin:0;
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_styles_modern.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+#Modern a:hover, #Modern a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_styles_modern.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+#Shingle_Style {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_styles_shingle.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+#Shingle_Style a:hover, #Shingle_Style a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_styles_shingle.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+#Stone {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_styles_stone.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+#Stone a:hover, #Stone a:active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_styles_stone.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+#Stone #Gold a:hover{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_goldKhouri.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+#Stone #Gold a:active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_goldKhouri.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+}
+
+#Tudor {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_styles_tudor.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+#Tudor a:hover, #Tudor a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_styles_tudor.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+#Victorian {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_styles_victorian.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+#Victorian a:hover, #Victorian a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_styles_victorian.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+
+#Kitchens {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_spaces_kitchens.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+#Kitchens a:hover, #Kitchens a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_spaces_kitchens.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+#Family_Rooms {
+padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_spaces_familyRooms.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+#Family_Rooms a:hover, #Family_Rooms a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_spaces_familyRooms.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+#Bedrooms {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_spaces_bedrooms.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+#Bedrooms a:hover, #Bedrooms a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_spaces_bedrooms.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+#Bathrooms {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_spaces_bathrooms.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+#Bathrooms a:hover, #Bathrooms a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_spaces_bathrooms.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+#Library {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_spaces_libraries.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+#Library a:hover, #Library a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_spaces_libraries.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+#Other_Spaces {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_spaces_otherSpaces.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+#Other_Spaces a:hover,
+#Other_Spaces a.active {
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_spaces_otherSpaces.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+.menu #Rochambeau {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_rochambeau.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Rochambeau a:hover{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_rochambeau.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+.menu #Rochambeau a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_rochambeau.gif);
+    background-position:0 -68px;
+    background-repeat:no-repeat;
+}
+.menu #Stuyvesant {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_stuyvesant.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Stuyvesant a:hover, .menu #Stuyvesant a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_stuyvesant.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+.menu #Bullock {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_bullock.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+	list-style:none;
+	list-style-image: none;
+
+	}
+.menu #Bullock a:hover, .menu #Bullock a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_bullock.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+.menu #Apawamis {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_apawamis.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Apawamis a:hover, .menu #Apawamis a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_apawamis.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+.menu #Overlook {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_overlook.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Overlook a:hover, .menu #Overlook a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_overlook.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+.menu #Milton {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_milton.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Milton a:hover, .menu #Milton a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_milton.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+.menu #King {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_King.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #King a:hover, .menu #King a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_King.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+.menu #Nichols {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_Nichols.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Nichols a:hover, .menu #Nichols a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_Nichols.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+.menu #Continental{
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_continental.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Continental a:hover, .menu #Continental a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_continental.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+.menu #Evergreen {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_evergreen.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Evergreen a:hover, .menu #Evergreen a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_evergreen.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+.menu #Livingston {
+	margin:0;
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_livingston.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Livingston a:hover, .menu #Livingston a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_livingston.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+
+.menu #Highland {
+	margin:0;
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_highland.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Highland a:hover, .menu #Highland a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_highland.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+.menu #First {
+	margin:0;
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_first.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #First a:hover, .menu #First a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_first.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+
+.menu #Onondaga {
+	margin:0;
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_onondaga.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Onondaga a:hover,.menu #Onondaga a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_onondaga.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+	
+.menu #Nabhan {
+	margin:0;
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_onondaga.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Nabhan a:hover,.menu #Nabhan a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_onondaga.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+
+.menu #Springhurst {
+	margin:0;
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_springhurst.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Springhurst a:hover, .menu #Springhurst a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_springhurst.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+.menu #Tuttle_Road_Briarcliff_Manor {
+	margin:0;
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_turtle.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Tuttle_Road_Briarcliff_Manor a:hover,.menu #Tuttle_Road_Briarcliff_Manor a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_turtle.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+	
+.menu #Waterhouse {
+	margin:0;
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_turtle.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Waterhouse a:hover,.menu #Waterhouse a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_turtle.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+.menu #Kerry {
+	margin:0;
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_kerry.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Kerry a:hover,.menu #Kerry a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_kerry.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+.menu #Grace{
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_grace.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Grace a:hover, .menu #Grace a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_grace.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+.menu #Dogwood{
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_Dogwood.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Dogwood a:hover, .menu #Dogwood a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_Dogwood.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+.menu #Upper{
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_Dogwood.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #Upper a:hover, .menu #Upper a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_Dogwood.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+.menu #River {
+	padding:0;
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_river.gif);
+    background-position:0 0;
+    background-repeat:no-repeat;
+	font-size: 1px;
+	display:block;
+
+	}
+.menu #River a:hover, .menu #River a.active{
+	background-color:transparent;
+    background-image:url(../../files/images/global/nav_secondary/nav_sec_type_river.gif);
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+	}
+
+
+
+/* untouched zen styles
+----------------------------------------------- */
+
+  body
+  {
+  }
+
+  #page
+  {
+  }
+
+  #page-inner
+  {
+  }
+
+/** header **/
+  #header
+  {
+  }
+
+  #header-inner
+  {
+  }
+
+  #logo-title /* Wrapper for logo, website name, and slogan */
+  {
+  }
+
+  #logo /* Wrapper for logo */
+  {
+  }
+
+  #logo-image /* The actual logo image */
+  {
+  }
+
+  #site-name /* The name of the website */
+  {
+  }
+
+  #site-name a:link,
+  #site-name a:visited
+  {
+    color: #000;
+    text-decoration: none;
+  }
+
+  #site-name a:hover
+  {
+    text-decoration: underline;
+  }
+
+  #site-slogan /* The slogan (or tagline) of a website */
+  {
+  }
+
+  #header-blocks /* Wrapper for any blocks placed in the header region */
+  {
+  }
+
+/** content **/
+  #content
+  {
+  }
+
+  #content-inner
+  {
+  }
+
+  #mission /* The mission statement of the site (displayed on homepage) */
+  {
+  }
+
+  #content-top /* Wrapper for any blocks placed in the "content top" region */
+  {
+  }
+
+  #content-header /* Wrapper for breadcrumb, title, messages, tabs, and help */
+  {
+  }
+
+  .breadcrumb /* The path to the current page in the form of a list of links */
+  {
+    padding-bottom: 0; /* Undo system.css */
+    display:none;
+  }
+
+  h1.title, /* The title of the page */
+  h2.title, /* Block title or the title of a piece of content when it is given in a list of content */
+  h3.title /* Comment title */
+  {
+    margin: 0;
+  }
+ /*///////////////////////////////////////////////////////////////////// */
+ 
+  h4.title { /* First line of text in the content area */
+  	font-size: 20px;
+	color: #58534a;
+  }
+  h5.title { /* Subhead */
+   font: Arial, Helvetica, sans-serif;
+   font-size: 14px;
+   color: #58534a;
+  }
+ /*///////////////////////////////////////////////////////////////////// */
+
+  div.messages /* Important messages (status, warning, and error) for the user */
+  {
+    margin: 0 1em 5px 1em;
+    border: 2px solid #ccc;
+    padding: 5px;
+    color: #000;
+    background-color: #fff;
+    font-style: italic;
+	position: absolute;
+	z-index: 12;
+	left: 320px;
+  }
+
+  div.status /* Normal priority messages */
+  {
+  }
+
+  div.warning /* Medium priority messages */
+  {
+    /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
+  }
+
+  div.warning,
+  tr.warning,
+  body.section-admin tr.warning
+  {
+    /* color: #220; */ /* Drupal core uses #220 */
+    background: #ffd;
+  }
+
+  div.error /* High priority messages. See also the .error declaration below. */
+  {
+    /* border: 1px solid #d77; */ /* Drupal core uses: 1px solid #d77 */
+  }
+
+  div.error,
+  tr.error,
+  body.section-admin tr.error
+  {
+    /* color: #200; */ /* Drupal core uses #200 */
+  }
+
+  div.tabs /* See also the tabs.css file. */
+  {
+	z-index: 50;
+  }
+
+  .help /* Help text on a page */
+  {
+    margin: 1em 0;
+  }
+
+  .more-help-link /* Link to more help */
+  {
+    font-size: 0.85em;
+    text-align: right;
+  }
+
+  #content-area /* Wrapper for the actual page content */
+  {
+	z-index: 0;
+	
+  }
+
+  .pager /* A list of page numbers when more than 1 page of content is available */
+  {
+    clear: both;
+    margin: 1em 0;
+    text-align: center;
+  }
+
+  .pager a, .pager strong.pager-current
+  {
+    padding: 0.5em;
+  }
+
+  .feed-icons /* The links to the RSS or Atom feeds for the current list of content */
+  {
+    margin: 1em 0;
+  }
+
+  #content-bottom /* Wrapper for any blocks placed in the "content bottom" region */
+  {
+  }
+
+/** navbar **/
+
+  #search-box /* Wrapper for the search form */
+  {
+  }
+
+  #edit-search-theme-form-1-wrapper label /* Label that says "Search this site:" */
+  {
+    display: none;
+  }
+
+  #primary /* Primary links */
+  {
+  }
+
+  #secondary /* Secondary links */
+  {
+  }
+
+/** sidebar-left **/
+
+  #sidebar-left
+  {
+  }
+
+/** sidebar-right **/
+  #sidebar-right
+  {
+  }
+
+  #sidebar-right-inner
+  {
+  }
+
+/** footer **/
+  #footer
+  {
+  }
+
+  #footer-inner
+  {
+  }
+
+  #footer-message /* Wrapper for the footer message from Drupal's "Site information"
+                     and for any blocks placed in the footer region */
+  {
+  }
+
+/** closure **/
+  #closure-blocks /* Wrapper for any blocks placed in the closure region */
+  {
+  }
+
+/** Drupal nodes **/
+  .node /* Node wrapper */
+  {
+  }
+
+  .node-inner /* Additional wrapper for node */
+  {
+  }
+
+  .sticky /* A sticky node (displayed before others in a list) */
+  {
+  }
+
+  .node-unpublished /* Unpublished nodes */
+  {
+    /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+  }
+
+  .node-unpublished div.unpublished, /* The word "Unpublished" displayed beneath the content. */
+  .comment-unpublished div.unpublished
+  {
+    height: 0;
+    overflow: visible;
+    color: #d8d8d8;
+    font-size: 75px;
+    line-height: 1;
+    font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    word-wrap: break-word; /* A very nice CSS3 property */
+  }
+
+  .node-mine /* A node created by the current user */
+  {
+  }
+
+  .node-teaser /* A node displayed as teaser */
+  {
+  }
+
+  /* All nodes are given a node-type-FOO class that describes the type of
+   * content that it is. If you create a new content type called
+   * "my-custom-type", it will receive a "node-type-my-custom-type" class.
+   */
+  .node-type-page /* Page content node */
+  {
+  }
+
+  .node-type-story /* Story content node */
+  {
+  }
+
+  .node h2.title /* Node title */
+  {
+  }
+
+  .marker /* "New" or "Updated" marker for content that is new or updated for the current user */
+  {
+    color: #c00;
+  }
+
+  .node .picture /* The picture of the node author */
+  {
+  }
+
+  .node.node-unpublished .picture,
+  .comment.comment-unpublished .picture
+  {
+    position: relative; /* Otherwise floated pictures will appear below the "Unpublished" text. */
+  }
+
+  .node .submitted /* The "posted by" information */
+  {
+  height:0px;
+  width: 0px;
+  overflow:	hidden;
+  }
+
+  .node .taxonomy /* Node taxonomy (categories) */
+  {
+  }
+
+  .node .content /* Node's content wrapper */
+  {
+  }
+
+  .node div.links /* Wrapper for node links */
+  {
+    margin: 1em 0;
+  }
+
+  ul.links /* Taxonomy links, node links, comment links */
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul.links.inline
+  {
+    display: inline;
+  }
+
+  ul.links li
+  {
+    display: inline;
+    list-style-type: none;
+    padding: 0 0.5em;
+  }
+
+  .preview .node /* Preview of the content before submitting new or updated content */
+  {
+    /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+  }
+
+/** Drupal comments **/
+  #comments /* Wrapper for all comments */
+  {
+    margin: 1em 0;
+  }
+
+  .comment /* Wrapper for a single comment */
+  {
+  }
+
+  .comment-inner /* Additional wrapper for a single comment */
+  {
+  }
+
+  .comment.odd /* An odd-numbered comment in the list of comments */
+  {
+  }
+
+  .comment.even /* An even-numbered comment in the list of comments */
+  {
+  }
+
+  .comment-unpublished /* Unpublished comments */
+  {
+    /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+  }
+
+  .comment-unpublished div.unpublished /* The word "Unpublished" displayed beneath the content. See also the div.unpublished declaration in the node section above. */
+  {
+  }
+
+  .comment-by-author /* A comment created by the node's author */
+  {
+  }
+
+  .comment-by-anon /* A comment created by an anonymous user */
+  {
+  }
+
+  .comment-mine /* A comment created by the current user */
+  {
+  }
+
+  .comment h3.title /* Comment title */
+  {
+  }
+
+  .new /* "New" marker for comments that are new for the current user */
+  {
+    color: #c00;
+  }
+
+  .comment .picture /* The picture of the comment author */
+  {
+  }
+
+  .comment .submitted /* The "posted by" information */
+  {
+  }
+
+  .comment .content /* Comment's content wrapper */
+  {
+  }
+
+  .comment div.links /* Wrapper for comment links. See also the ul.links declaration in the node section above. */
+  {
+    margin: 1em 0;
+  }
+
+  .indented /* Nested comments are indented */
+  {
+    /* margin-left: 25px; */ /* Drupal core uses a 25px left margin */
+  }
+
+  .preview .comment /* Preview of the comment before submitting new or updated comment */
+  {
+    /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+  }
+
+/** Drupal blocks **/
+  .block /* Block wrapper */
+  {
+    margin-bottom: 1em;
+  }
+
+  .block.region-odd /* Zebra striping for each block in the region */
+  {
+  }
+
+  .block.region-even /* Zebra striping for each block in the region */
+  {
+  }
+
+  .block.odd /* Zebra striping independent of each region */
+  {
+  }
+
+  .block.even /* Zebra striping independent of each region */
+  {
+  }
+
+  .region-count-1 /* Incremental count for each block in the region */
+  {
+  }
+
+  .count-1 /* Incremental count independent of each region */
+  {
+  }
+
+  .block-inner /* Additional wrapper for block */
+  {
+  }
+
+  .block h2.title /* Block title */
+  {
+  }
+
+  .block .content /* Block's content wrapper */
+  {
+  }
+
+  #block-aggregator-category-1 /* Block for the latest news items in the first category */
+  {
+  }
+
+  #block-aggregator-feed-1 /* Block for the latest news items in the first feed */
+  {
+  }
+
+  #block-block-1 /* First administrator-defined block */
+  {
+  }
+
+  #block-blog-0 /* "Recent blog posts" block */
+  {
+  }
+
+  #block-book-0 /* "Book navigation" block for the current book's table of contents */
+  {
+  }
+
+  #block-comments-0 /* "Recent comments" block */
+  {
+  }
+
+  #block-forum-0 /* "Active forum topics" block */
+  {
+  }
+
+  #block-forum-1 /* "New forum topics" block */
+  {
+  }
+
+  #block-menu-2 /* "Primary links" block */
+  {
+  }
+
+  #block-node-0 /* "Syndicate" block for primary RSS feed */
+  {
+  }
+
+  #block-poll-0 /* "Most recent poll" block */
+  {
+  }
+
+  #block-profile-0 /* "Author information" block for the profile of the page's author */
+  {
+  }
+
+  #block-search-0 /* "Search form" block */
+  {
+  }
+
+  #block-statistics-0 /* "Popular content" block */
+  {
+  }
+
+  #block-user-0 /* "User login form" block */
+  {
+  }
+
+  #block-user-1 /* "Navigation" block for Drupal navigation menu */
+  {
+  }
+
+  #block-user-2 /* "Who's new" block for a list of the newest users */
+  {
+  }
+
+  #block-user-3 /* "Who's online" block for a list of the online users */
+  {
+  }
+
+/** Drupal boxes **/
+  /* Wrapper for Comment form, Comment viewing options, Menu admin, and
+   * Search results.
+   */
+  .box /* Wrapper for box */
+  {
+  }
+
+  .box-inner /* Additional wrapper for box */
+  {
+  }
+
+  .box h2.title /* Box title */
+  {
+  }
+
+  .box .content /* Box's content wrapper */
+  {
+  }
+
+/** Miscellaneous Drupal styles **/
+  .error /* Errors that are separate from div.messages status messages (see above.) */
+  {
+    /* color: #e55; */ /* Drupal core uses a #e55 background */
+  }
+
+  .warning /* Warnings that are separate from div.messages status messages (see above.) */
+  {
+    /* color: #e09010; */ /* Drupal core uses a #e09010 background */
+  }
+
+  .more-link /* Aggregator, blog, and forum more link */
+  {
+    text-align: right;
+  }
+
+  #user-login-form /* Drupal's default login form */
+  {
+    text-align: left;
+  }
+
+  tr.even, tr.odd /* Some tables have rows marked even or odd. See also the ".section-admin tr.even" declaration below. */
+  {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  tr.even
+  {
+    /* background-color: #eee; */ /* Drupal core uses a #eee background */
+  }
+
+  tr.odd
+  {
+    /* background-color: #eee; */ /* Drupal core uses a #eee background */
+  }
+
+  li a.active /* The active item in a Drupal menu */
+  {
+    color: #000;
+  }
+
+
+/** Drupal forms **/
+  .form-item, /* Wrapper for a form element (or group of form elements) and its label */
+  .form-checkboxes,
+  .form-radios
+  {
+    margin: 1em 0;
+  }
+
+  .form-item input.error, /* Highlight the form elements that caused a form submission error */
+  .form-item textarea.error,
+  .form-item select.error
+  {
+    border: 2px solid #c00;
+  }
+
+  .form-item label /* The label for a form element */
+  {
+    display: block;
+    font-weight: bold;
+  }
+
+  .form-item label.option /* The label for a radio button or checkbox */
+  {
+    display: inline;
+    font-weight: normal;
+  }
+
+  .form-required /* The part of the label that indicates a required field */
+  {
+    color: #c00;
+  }
+
+  .form-item .description /* The descriptive help text (separate from the label) */
+  {
+    font-size: 0.85em;
+  }
+
+  .form-checkboxes .form-item, /* Pack groups of checkboxes and radio buttons closer together */
+  .form-radios .form-item
+  {
+    margin: 0.4em 0;
+  }
+
+  .form-submit /* The submit button */
+  {
+  }
+
+  .container-inline div, .container-inline label /* Inline labels and form divs */
+  {
+    display: inline;
+  }
+
+  .tips /* Tips for Drupal's input formats */
+  {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+  }
+
+/** OpenID **/
+  /* The default styling for the OpenID login link seems to assume Garland's
+   * styling of list items.
+   */
+  #user-login-form ul /* OpenID creates a new ul above the login form's links. */
+  {
+    margin-bottom: 0; /* Position OpenID's ul next to the rest of the links. */
+  }
+
+  #user-login-form li.openid-link, /* The "Log in using OpenID" links. */
+  #user-login li.openid-link
+  {
+    margin-top: 1em;
+    margin-left: -20px; /* Un-do some of the padding on the ul list. */
+  	padding-left: 20px;
+  	background-position: left center;
+  }
+
+  #user-login-form li.user-link, /* The "Cancel OpenID login" links. */
+  #user-login li.user-link
+  {
+    margin-top: 1em;
+  	list-style-type: disc;
+  	list-style-position: outside;
+  }
+
+  #user-login li.openid-link, /* The OpenID links on the /user form. */
+  #user-login li.user-link
+  {
+    margin-left: -2em; /* Un-do all of the padding on the ul list. */
+  }
+
+/** Drupal admin tables **/
+  /* We overrode these styles in html-elements.css, but restore them for the
+   * admin section of the site.
+   */
+  .section-admin tbody
+  {
+    border-top: 1px solid #ccc;
+  }
+
+  .section-admin th
+  {
+    text-align: left;
+    padding-right: 1em;
+    border-bottom: 3px solid #ccc;
+  }
+
+  .section-admin tbody th
+  {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .section-admin thead th
+  {
+    text-align: left;
+    padding-right: 1em;
+    border-bottom: 3px solid #ccc;
+  }
+
+  .section-admin tr.even,
+  .section-admin tr.odd
+  {
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    padding: 0.1em 0.6em;
+  }

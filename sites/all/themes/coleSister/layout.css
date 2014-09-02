@@ -1,0 +1,472 @@
+/* $Id: layout-fixed.css,v 1.2 2008/04/21 17:05:17 johnalbin Exp $ */
+
+/*
+ * LAYOUT STYLES
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout is based on the Border Politics Layout Method.
+ *   http://drupal.org/node/201428
+ *
+ * Only CSS that affects the layout (positioning) of major elements should be
+ * listed here.  Such as:
+ *   display, position, float, clear, width, height, min-width, min-height
+ *   margin, border, padding, overflow
+ */
+
+
+/* global styles
+----------------------------------------------- */
+
+/** body **/
+body{
+	margin:0;
+    padding-top:30px;
+    background-color:#dfdcd5;
+    
+    }
+#page,
+#closure-blocks{
+    /*
+     * If you want to make the page a fixed width and centered in the viewport,
+     * this is the standards-compliant way to do that. See also the ie.css file
+     * for the necessary IE5 hack to center a div.
+     */
+    margin-left: auto;
+    margin-right: auto;
+    width:970px; 
+	position: relative;   
+	}
+#page-inner{
+  	margin:0;
+  	padding:0;
+    width:970px;
+	position: relative;   
+
+    }
+#primary{
+	margin:0;
+	padding:0;
+	width:970px;
+	height:38px;
+	position:relative;
+    list-style-type:none;
+    float:left;
+    display:block;
+	background-color:transparent;
+
+	}	
+#navigation-top,
+#navigation{
+    position: absolute; /* Take the named anchors out of the doc flow    */
+    left: -10000px;     /* and prevent any anchor styles from appearing. */
+    
+    }
+    
+/** primary horizontal navigation (different from sister) **/
+#navbar{
+	
+	width:970px;
+	height:38px;
+	position: absolute;
+	/*top:-435px;
+	margin:0;
+	padding:0;
+	left:12px;
+	float:left;
+	display:block; */
+	background-color:transparent;
+	background-position:right;
+	background-repeat:no-repeat;
+	overflow:visible;
+	
+	}
+#navbar-inner{
+	margin:0;
+	padding:0;
+	width:946px;
+	height:38px;
+	position:relative;
+	background-color:#6c6f79;
+	
+	}
+#skip-to-nav{
+    float: right;
+    margin: 0 !important;
+    font-size: 0.8em;
+    display:none;
+    
+    }
+#skip-to-nav a:link, #skip-to-nav a:visited{
+    color: #fff; /* Same as background color of page */
+    
+    }
+#skip-to-nav a:hover{
+    color: #000;
+    text-decoration: none;
+    
+    }
+
+/** header **/
+#header{
+	}
+
+#header-inner{
+  	margin:0px 0px 5px 38px;
+  	padding:0;
+    width:946px;
+    left:12px;
+    overflow:visible;
+	background-image: url(../../files/images/global/logo.png);
+	background-repeat: no-repeat;
+	height: 17px;
+	display: block;
+	
+    }
+#logo-title{}
+#logo{
+    margin: 0 10px 0 0;
+    padding: 0;
+    float:left;
+    display:none;
+    
+    }
+h1#site-name,
+div#site-name{
+   /* position:relative;
+    top:-80px;
+    left:-285px;
+    overflow:hidden;
+    background-color:transparent;
+    background-position:0 0;  */
+	background-image:url(../../files/images/global/logo.png);
+    background-repeat:no-repeat;
+    
+    }
+body.not-front #site-name,
+h1#site-name{
+  	margin:0;
+  	padding:0;
+    width:161px;
+    height:17px;
+	text-indent:-123420px;
+
+	}
+
+#site-slogan{}
+
+#header-blocks{
+	clear: both; /* Clear the logo */
+    
+    }
+#main{
+	margin:0;
+	padding-top:0;
+	position:relative;
+	width:970px;
+    background-color:#dfdcd5;
+    background-image:url(../../files/images/global/body_shadowRepeat.png);
+    background-repeat:repeat-y;
+    background-position:0 0;
+	
+	}
+#main-inner{
+margin:0;
+  	padding:0;
+    width:970px;
+    background-color:transparent;
+    background-image:url(../../files/images/global/body_shadowTopCap.png);
+    background-repeat:no-repeat;
+    background-position:0 0;
+}
+  
+/** content **/
+#content,
+.two-sidebars #content{
+    /*float:left;
+    width: 560px;
+    margin-left: 200px;*/ /* The width of #sidebar-left */
+    /*margin-right: -760px;*/ /* Negative value of #content's width + left margin. */
+    padding: 0; /* DO NOT CHANGE. Add padding or margin to #content-inner. */
+    
+    }
+.sidebar-left #content{
+   /* width: 500px;
+    margin-left: 200px;*/ /* The width of #sidebar-left. */
+    /*margin-right: -700px;*/ /* Negative value of #content's width + left margin. */
+    
+    }
+.sidebar-right #content{
+    width: 760px;
+    margin-left: 0;
+    margin-right: -760px; /* Negative value of #content's width + left margin. */
+    
+    }
+.no-sidebars #content{
+    width: 960px;
+    margin-left: 0;
+    margin-right: -960px; /* Negative value of #content's width + left margin. */
+    
+    }
+#content-area .content{
+    width:800px;
+    margin-top:50px;
+    /*margin-left:20px;*/
+    margin-bottom:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+	min-height: 600px;
+
+    }
+    
+/** footer **/
+#footer{
+	padding: 10px;
+	width:946px;
+	position:relative;
+	display:block;
+	overflow:hidden;
+	font:normal 10px Verdana, Arial, sans-serif;
+	color:#858177;
+	line-height:13px;
+	letter-spacing:.5px;
+	text-align:center;	
+	background-color:#c8c1b0;
+	margin-left: 14px;
+
+	}
+
+/* index page
+----------------------------------------------- */
+
+/** content **/
+#block-block-2 .content{
+  	margin:0;
+  	padding:0;
+    width:637px;
+    height:447px;
+    position:relative;
+    float:right;
+    top:48px;
+    right:3px;
+    overflow:visible;
+    background-color:transparent;
+    background-image:url(../../files/images/styles/imageRight_placeHolder.jpg);
+    background-repeat:no-repeat;
+    background-position:0 0;  
+
+	}
+#block-block-3 .content{
+  	margin:0;
+  	padding:0;
+    width:308px;
+    height:344px;
+    position:relative;
+    f /*float:left;
+	left:12px;
+    top:48px;
+    overflow:visible;*/
+    background-color:transparent;
+    background-image:url(../../files/images/styles/imageLeft_placeHolder.jpg);
+    background-repeat:no-repeat;
+    background-position:0 0;  
+
+	}
+#content-area .content{
+    width:637px;
+	/*height:143px;
+    margin-top:85px;
+    margin-right:2px;
+    margin-bottom:30px;
+    margin-left:20px;
+    padding-top:13px;
+    padding-bottom:8px;
+	position:relative;
+	display:block;
+    overflow:hidden; */
+	padding-left: 319px;
+    } 
+  
+/* login page
+----------------------------------------------- */
+
+/** content > form **/
+body.not-front #content-area form#user-login,
+body.not-front #content-area form#user-register,
+body.not-front #content-area form#user-pass{
+	width:925px;
+	margin-top:65px;
+	margin-left:13px;
+	padding:10px;
+	display:block;
+	background-color:#efefef;
+
+	}
+	
+/* custom admin styles
+----------------------------------------------- */
+
+body.logged-in #content-inner{
+    margin-top:60px;
+    margin-left:20px;
+    width:700px;
+    padding: 0;
+
+	}
+body.page-node-6 #content-inner{
+	margin-left:auto;
+	margin-right:auto;
+	width:200px;
+	position:relative;
+	float:left;
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+/* untouched zen styles
+----------------------------------------------- */
+
+  .with-navbar #content,
+  .with-navbar #sidebar-left,
+  .with-navbar #sidebar-right
+  {
+   /* margin-top: 3.6em;  Set this to the same value as the navbar height above. */
+  }
+
+  #navbar-inner
+  {
+  }
+
+  #search-box
+  {
+    width: 200px;
+    margin-right: -200px; /* Negative value of #search-box's width. */
+    float: left;
+  }
+
+  #primarry
+  {
+  }
+
+  #secondary
+  {
+  }
+
+  #navbar ul /* Primary and secondary links */
+  {
+  list-style:none;
+	list-style-image: none;
+  }
+
+  #navbar li /* A simple method to get navbar links to appear in one line. */
+  {
+  list-style:none;
+	list-style-image: none;
+  }
+  
+  /* Alternatively, the skip-to-nav link can be completely hidden until a user tabs
+     to the link. Un-comment the following CSS to use this technique. */
+  /*
+  #skip-to-nav a, #skip-to-nav a:hover, #skip-to-nav a:visited
+  {
+    position: absolute;
+    left: 0;
+    top: -500px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  #skip-to-nav a:active, #skip-to-nav a:focus
+  {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+  */ 
+
+  /* There are many methods to get navbar links to appear in one line.
+   * Here's an alternate method: */
+  /*
+  #navbar li
+  {
+    display: inline;
+    padding: 0 10px 0 0;
+  }
+  */
+
+/** sidebar-left **/
+  #sidebar-left{
+    float: left;
+    width: 200px;
+    margin-top:25px;
+    margin-left:15px;
+    margin-right:0; /* Negative value of #sidebar-left's width + left margin. */
+    padding: 0; /* DO NOT CHANGE. Add padding or margin to #sidebar-left-inner. */
+  }
+
+  #sidebar-left-inner
+  {
+    margin: 0 20px 0 0;
+    padding: 0;
+  }
+
+/** sidebar-right **/
+  #sidebar-right
+  {
+    float: left;
+    width: 200px;
+    margin-left: 760px; /* Width of content + sidebar-left. */
+    margin-right: -960px; /* Negative value of #sidebar-right's width + left margin. */
+    padding: 0; /* DO NOT CHANGE. Add padding or margin to #sidebar-right-inner. */
+  }
+
+  #sidebar-right-inner
+  {
+    margin: 0 0 0 20px;
+    padding: 0;
+  }
+
+/** footer **/
+  #footer
+  {
+  }
+
+  #footer-inner
+  {
+  }
+
+/** closure **/
+  #closure-blocks /* See also the #page declaration above that this div shares. */
+  {
+  }
+
+/** Prevent overflowing content **/
+  #header,
+  #content,
+  #navbar,
+  #sidebar-left,
+  #sidebar-right,
+  #footer,
+  #closure-blocks
+  {
+    overflow: visible;
+    word-wrap: break-word; /* A very nice CSS3 property */
+  }
+
+  #navbar
+  {
+    overflow: hidden; /* May need to be removed if using a dynamic drop-down menu */
+  }
