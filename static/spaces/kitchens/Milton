@@ -6,26 +6,26 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="robots" content="index,follow" />
 <meta name="DC.title" content="Milton Road, Rye" />
-<link rel="shortcut icon" href="http://www.petercolearchitect.com/sites/all/themes/coleSpaces/favicon.ico" type="image/x-icon" />
-  <link type="text/css" rel="stylesheet" media="all" href="http://www.petercolearchitect.com/modules/node/node.css?v" />
-<link type="text/css" rel="stylesheet" media="all" href="http://www.petercolearchitect.com/modules/system/defaults.css?v" />
-<link type="text/css" rel="stylesheet" media="all" href="http://www.petercolearchitect.com/modules/system/system.css?v" />
-<link type="text/css" rel="stylesheet" media="all" href="http://www.petercolearchitect.com/modules/system/system-menus.css?v" />
-<link type="text/css" rel="stylesheet" media="all" href="http://www.petercolearchitect.com/modules/user/user.css?v" />
-<link type="text/css" rel="stylesheet" media="all" href="http://www.petercolearchitect.com/sites/all/modules/img_assist/img_assist.css?v" />
-<link type="text/css" rel="stylesheet" media="all" href="http://www.petercolearchitect.com/sites/all/themes/zen/zen/html-elements.css?v" />
-<link type="text/css" rel="stylesheet" media="all" href="http://www.petercolearchitect.com/sites/all/themes/zen/zen/tabs.css?v" />
-<link type="text/css" rel="stylesheet" media="all" href="http://www.petercolearchitect.com/sites/all/themes/coleSpaces/zen.css?v" />
-<link type="text/css" rel="stylesheet" media="all" href="http://www.petercolearchitect.com/sites/all/themes/coleSpaces/layout.css?v" />
-<link type="text/css" rel="stylesheet" media="all" href="http://www.petercolearchitect.com/sites/all/themes/coleSpaces/coleSpaces.css?v" />
-<link type="text/css" rel="stylesheet" media="all" href="http://www.petercolearchitect.com/sites/all/themes/coleSpaces/galleria.css?v" />
-<link type="text/css" rel="stylesheet" media="print" href="http://www.petercolearchitect.com/sites/all/themes/coleSpaces/print.css?v" />
+<link rel="shortcut icon" href="/sites/all/themes/coleSpaces/favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/img_assist/img_assist.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/zen/html-elements.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/zen/tabs.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/coleSpaces/zen.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/coleSpaces/layout.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/coleSpaces/coleSpaces.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/coleSpaces/galleria.css?v" />
+<link type="text/css" rel="stylesheet" media="print" href="/sites/all/themes/coleSpaces/print.css?v" />
   <!--[if IE]>
           <link rel="stylesheet" href="/sites/all/themes/zen/zen/ie.css" type="text/css">
       <![endif]-->
-  <script type="text/javascript" src="http://www.petercolearchitect.com/misc/jquery.js?v"></script>
-<script type="text/javascript" src="http://www.petercolearchitect.com/misc/drupal.js?v"></script>
-<script type="text/javascript" src="http://www.petercolearchitect.com/sites/all/modules/img_assist/img_assist.js?v"></script>
+  <script type="text/javascript" src="/misc/jquery.js?v"></script>
+<script type="text/javascript" src="/misc/drupal.js?v"></script>
+<script type="text/javascript" src="/sites/all/modules/img_assist/img_assist.js?v"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 jQuery.extend(Drupal.settings, { "basePath": "/" });
@@ -66,7 +66,7 @@ jQuery.extend(Drupal.settings, { "basePath": "/" });
   
   <div class="content">
     <div id="styles_image">
-<span class="inline inline-left"><img src="http://www.petercolearchitect.com/sites/default/files/images/_20080616_0001_1.JPG" alt="" title=""  class="image image-_original " width="640" height="337" /></span>
+<span class="inline inline-left"><img src="/sites/default/files/images/_20080616_0001_1.JPG" alt="" title=""  class="image image-_original " width="640" height="337" /></span>
 </div>
 <div class="image-clear"></div>  </div>
 

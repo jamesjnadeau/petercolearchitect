@@ -1,3 +1,3 @@
 petercolearchitect
 ==================
-raw html dump of http://www.petercolearchitect.com/
+raw html dump of /

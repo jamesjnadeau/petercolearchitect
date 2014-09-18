@@ -149,9 +149,9 @@ handlers:
   upload: static/(.*\.xpi)
 
 # image files
-- url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
+- url: /(.*\.(bmp|gif|ico|jpeg|jpg|JPG|png))
   static_files: static/\1
-  upload: static/(.*\.(bmp|gif|ico|jpeg|jpg|png))
+  upload: static/(.*\.(bmp|gif|ico|jpeg|jpg|JPG|png))
 
 # audio files
 - url: /(.*\.(mid|midi|mp3|wav))
@@ -168,25 +168,141 @@ handlers:
   static_files: static/\1
   upload: static/(.*\.(bz2|gz|rar|tar|tgz|zip))
 
-#fix for about
+
+
+#fix for random urls
 - url: /about
   mime_type: text/html
   static_files: static/about
   upload: static/about
 
+- url: /contact
+  mime_type: text/html
+  static_files: static/contact
+  upload: static/contact
+
+- url: /contact
+  mime_type: text/html
+  static_files: static/contact
+  upload: static/contact
+
+- url: /spaces/kitchen/milton
+  mime_type: text/html
+  static_files: static/spaces/kitchen/milton
+  upload: static/spaces/kitchen/milton
+
+- url: /spaces/kitchens/(.*)
+  mime_type: text/html
+  static_files: static/spaces/kitchens/\1
+  upload: static/spaces/kitchens/(.*)
+
+- url: /spaces/familyroom
+  mime_type: text/html
+  static_files: static/spaces/familyroom
+  upload: static/spaces/familyroom
+
+- url: /spaces/family/(.*)
+  mime_type: text/html
+  static_files: static/spaces/family/\1
+  upload: static/spaces/family/(.*)
+
+- url: /spaces/bedroom
+  mime_type: text/html
+  static_files: static/spaces/bedroom
+  upload: static/spaces/bedroom
+
+- url: /spaces/bedrooms/(.*)
+  mime_type: text/html
+  static_files: static/spaces/bedrooms/\1
+  upload: static/spaces/bedrooms/(.*)
+
+- url: /spaces/bathroom
+  mime_type: text/html
+  static_files: static/spaces/bathroom
+  upload: static/spaces/bathroom
+
+- url: /spaces/bathrooms/(.*)
+  mime_type: text/html
+  static_files: static/spaces/bathrooms/\1
+  upload: static/spaces/bathrooms/(.*)
+
+- url: /spaces/library
+  mime_type: text/html
+  static_files: static/spaces/library/
+  upload: static/spaces/library/
+
+- url: /spaces/library/(.*)
+  mime_type: text/html
+  static_files: static/spaces/library/\1
+  upload: static/spaces/library/(.*)
+
+- url: /spaces/other
+  mime_type: text/html
+  static_files: static/spaces/other/index.html
+  upload: static/spaces/other/index.html
+
+- url: /spaces/other/(.*)
+  mime_type: text/html
+  static_files: static/spaces/other/\1
+  upload: static/spaces/other/(.*)
+
+- url: /spaces/other
+  mime_type: text/html
+  static_files: static/spaces/other/index.html
+  upload: static/spaces/other/index.html
+
+#styles pages
+- url: /styles/colonial/(.*)
+  mime_type: text/html
+  static_files: static/styles/colonial/\1
+  upload: static/styles/colonial/(.*)
+
+- url: /styles/modern/(.*)
+  mime_type: text/html
+  static_files: static/styles/modern/\1
+  upload: static/styles/modern/(.*)
+
+- url: /styles/shingle/(.*)
+  mime_type: text/html
+  static_files: static/styles/shingle/\1
+  upload: static/styles/shingle/(.*)
+
+- url: /styles/stone/(.*)
+  mime_type: text/html
+  static_files: static/styles/stone/\1
+  upload: static/styles/stone/(.*)
+
+- url: /styles/tudor/(.*)
+  mime_type: text/html
+  static_files: static/styles/tudor/\1
+  upload: static/styles/tudor/(.*)
+
+- url: /styles/victorian/(.*)
+  mime_type: text/html
+  static_files: static/styles/victorian/\1
+  upload: static/styles/victorian/(.*)
+
+- url: /home
+  mime_type: text/html
+  static_files: static/home
+  upload: static/home
+
 # index files
 - url: /(.+)/
+  mime_type: text/html
   static_files: static/\1/index.html
   upload: static/(.+)/index.html
   expiration: "15m"
 
 - url: /(.+)
+  mime_type: text/html
   static_files: static/\1/index.html
   upload: static/(.+)/index.html
   expiration: "15m"
 
 # site root
 - url: /
+  mime_type: text/html
   static_files: static/index.html
   upload: static/index.html
   expiration: "15m"
