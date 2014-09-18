@@ -2,6 +2,7 @@ application: jamesjnadeau
 version: 2
 runtime: php
 api_version: 1
+threadsafe: true
 
 default_expiration: "30d"
 
