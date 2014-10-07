@@ -229,8 +229,8 @@ handlers:
 
 - url: /spaces/library
   mime_type: text/html
-  static_files: static/spaces/library/
-  upload: static/spaces/library/
+  static_files: static/spaces/library/index.html
+  upload: static/spaces/library/index.html
 
 - url: /spaces/library/(.*)
   mime_type: text/html
