@@ -1,6 +1,6 @@
-application: jamesjnadeau
-version: 2
-runtime: php
+application: midyear-gist-707
+version: 4
+runtime: php55
 api_version: 1
 threadsafe: true
 
