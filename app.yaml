@@ -1,5 +1,3 @@
-application: midyear-gist-707
-version: 4
 runtime: php55
 api_version: 1
 threadsafe: true
@@ -157,7 +155,7 @@ handlers:
 # audio files
 - url: /(.*\.(mid|midi|mp3|wav))
   static_files: static/\1
-  upload: static/(.*\.(mid|midi|mp3|wav))  
+  upload: static/(.*\.(mid|midi|mp3|wav))
 
 # windows files
 - url: /(.*\.(doc|exe|ppt|rtf|xls))

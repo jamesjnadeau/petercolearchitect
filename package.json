@@ -1,0 +1,20 @@
+{
+  "name": "petercolearchitect",
+  "version": "1.0.0",
+  "description": "petercolearchitect ================== deployed to google app engine, attempt 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gcloud preview app deploy app.yaml --project midyear-gist-707"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesjnadeau/petercolearchitect.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesjnadeau/petercolearchitect/issues"
+  },
+  "homepage": "https://github.com/jamesjnadeau/petercolearchitect#readme"
+}
